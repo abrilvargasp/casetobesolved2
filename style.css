@@ -96,9 +96,6 @@ img .img-libro {
     overflow: hidden;
 }
 
-.titulos, .slider {
-    background-color: #EF8348;
-}
 
 .item{
     position: absolute;
@@ -133,7 +130,7 @@ img .img-libro {
 /*-listas con el api-*/
 
 .parte-autores h1{
-    background-color: #4E3541;
+    background-color:#EF8348;
     font-family: "Mulish", sans-serif;
     color: #E4D2C2;
     justify-content: center;
@@ -142,9 +139,7 @@ img .img-libro {
     padding-bottom:40px ;
     padding-top: 40px;
 }
-.parte-autores, .user-list {
-    background-color: #4E3541;
-}
+
 
 
 .user-list {
@@ -155,6 +150,7 @@ img .img-libro {
     text-align: center;
     background-color: #4E3541;
     padding-top: 0;
+    background-color: #EF8348;
    
 
 }
