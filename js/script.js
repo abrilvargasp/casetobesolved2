@@ -4,14 +4,14 @@ let items = document.querySelectorAll('.slider .item');
     let next = document.getElementById('next');
     let prev = document.getElementById('prev');
     
-    let active = 0; // que empiece en item1
+    let activo = 0; // que empiece en item1
     function CargarTarjetas(){
         let stt = 0;
-        items[active].style.transform = `none`;
-        items[active].style.zIndex = 1;
-        items[active].style.filter = 'none';
-        items[active].style.opacity = 1;
-        for(let i = active + 1; i < items.length; i++){
+        items[activo].style.transform = `none`;
+        items[activo].style.zIndex = 1;
+        items[activo].style.filter = 'none';
+        items[activo].style.opacity = 1;
+        for(let i = activo + 1; i < items.length; i++){
             stt++;
             items[i].style.transform = `translateX(${120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
             items[i].style.zIndex = -stt;
@@ -19,7 +19,7 @@ let items = document.querySelectorAll('.slider .item');
             items[i].style.opacity = stt > 2 ? 0 : 0.6;
         }
         stt = 0;
-        for(let i = active - 1; i >= 0; i--){
+        for(let i = activo - 1; i >= 0; i--){
             stt++;
             items[i].style.transform = `translateX(${-120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
             items[i].style.zIndex = -stt;
@@ -29,14 +29,21 @@ let items = document.querySelectorAll('.slider .item');
     }
     CargarTarjetas();
     next.onclick = function(){
-        active = active + 1 < items.length ? active + 1 : active;
+        activo = activo + 1 < items.length ? activo + 1 : activo;
         CargarTarjetas();
     }
     prev.onclick = function(){
-        active = active - 1 >= 0 ? active - 1 : active;
+        activo = activo - 1 >= 0 ? activo - 1 : activo;
         CargarTarjetas();
     }
 
+
+    //---- boton de form 
+    window.addEventListener("load", function() {
+        document.getElementById("viewAlerta").addEventListener("click", function() {
+            alert("¡Muchas gracias! Contactaremos contigo lo más pronto posible");
+        });
+    });
 
     //----- PARTE DE LA API jsonplaceholder
 document.addEventListener("DOMContentLoaded", () => {

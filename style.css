@@ -128,7 +128,9 @@ img .img-libro {
 
 
 /*-listas con el api-*/
-
+.parte-autores {
+    height: 20px;
+}
 .parte-autores h1{
     background-color:#EF8348;
     font-family: "Mulish", sans-serif;
@@ -151,6 +153,7 @@ img .img-libro {
     background-color: #4E3541;
     padding-top: 0;
     background-color: #EF8348;
+    margin-top: 6em;
    
 
 }
@@ -204,6 +207,57 @@ img .img-libro {
 
 /*---form*/
 
+.form {
+    width: 400px;
+    background-color:#EF8348;
+    padding: 30px; 
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: "Mulish", sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
 
+
+.controls {
+   width: 90%;
+   background-color:white ;
+   padding: 10px;
+   border-radius: 4px;
+   margin-bottom: 15px;
+   border: 1px solid;
+   font-size: 18px;
+   font-family: "Mulish", sans-serif;
+}
+
+
+.form a {
+    color: white;
+    
+}
+.form .botonform {
+    width: 90%;
+    background-color:#4E3541;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family:"Mulish", sans-serif;
+}
+
+.botonform:hover {
+    font-size: 1.5rem;
+}
+.fondito h4 {
+        text-align:  center;
+        font-family: "Mulish", sans-serif;
+        font-weight: 200;
+        color: #E4D2C2;
+        margin-top: 50px;
+
+}
 
 /*---footer*/ 
